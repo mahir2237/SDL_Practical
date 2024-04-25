@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surface Area and Volume Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #333;
+    }
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    table tr td {
+        padding: 10px;
+    }
+    input[type="text"], input[type="radio"], input[type="submit"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    center {
+        display: block;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<form action="asgn5.php" method="get">
+    <center>
+        <h2>Calculate Volume</h2>
+        <table>
+            <tr>
+                <td>Enter Radius</td>
+                <td><input type="text" name="r"></td>
+            </tr>
+            <tr>
+                <td>Enter Height</td>
+                <td><input type="text" name="h"></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="op" value="1">Cone</td>
+                <td><input type="radio" name="op" value="2">Cylinder</td>
+            </tr>
+        </table>
+        <h2>Calculate Surface Area</h2>
+        <table>
+            <tr>
+                <td>Enter Radius</td>
+                <td><input type="text" name="r1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="op" value="3">Sphere</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Calculate"></td>
+            </tr>
+        </table>
+    </center>
+</form>
+</body>
+</html>

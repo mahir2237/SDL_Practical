@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f9f9f9;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.container {
+background-color: #ffffff;
+border-radius: 10px;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+padding: 30px;
+width: 400px;
+}
+.container h1 {
+font-size: 24px;
+font-weight: bold;
+color: #333333;
+margin-bottom: 20px;
+text-align: center;
+}
+form {
+display: flex;
+flex-direction: column;
+}
+label {
+font-size: 14px;
+color: #666666;
+margin-bottom: 5px;
+}
+input[type="text"],
+textarea {
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #dddddd;
+border-radius: 5px;
+transition: border-color 0.3s ease;
+}
+input[type="text"]:focus,
+textarea:focus {
+outline: none;
+border-color: #007bff;
+}
+textarea {
+resize: none;
+}
+input[type="submit"] {
+background-color: #007bff;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+padding: 12px 20px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Contact Form</h1>
+<form name="frmContact" method="post" action="contact1.php">
+<label for="txtfname">First Name</label>
+<input type="text" name="txtfname" id="txtfname" required>
+<label for="txtmname">Middle Name</label>
+<input type="text" name="txtmname" id="txtmname">
+<label for="txtlname">Last Name</label>
+<input type="text" name="txtlname" id="txtlname" required>
+<label for="txtpwd">Password</label>
+<input type="password" name="txtpwd" id="txtpwd" required>
+<input type="submit" name="Submit" id="Submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
